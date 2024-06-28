@@ -31,7 +31,7 @@ class LandmarkVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        landmarkVM.populateTableView()
+        landmarkVM.generateData()
     }
 }
 

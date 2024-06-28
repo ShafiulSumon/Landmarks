@@ -10,8 +10,19 @@ import Foundation
 class LandmarkVM {
     let observableObject = ObservableObject<[LandmarkModel]>()
     
-    func populateTableView() {
+    func generateData() {
         let rawData = RawData().data
         observableObject.result = rawData
     }
+    
+//    func generateData() {
+//        do {
+//            let rawData = try JSONDecoder().decode([LandmarkModel].self, from: RawData().landmarkData)
+//            self.observableObject.result = rawData
+//        }
+//        catch {
+//            print(error)
+//        }
+//        
+//    }
 }

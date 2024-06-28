@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LandmarkModel {
+struct LandmarkModel: Codable {
     var name: String
     var id: Int
     var subtitle: String
